@@ -7,8 +7,8 @@ using MonoTouch.UIKit;
 
 namespace FlurryBinding
 {
-	[BaseType (typeof(NSObject))]
-	interface Flurry
+    [BaseType (typeof (NSObject), Name = "Flurry")]
+    partial interface FlurryApi
 	{
 		[Static]
 		[Export ("setAppVersion:")]
@@ -77,7 +77,7 @@ namespace FlurryBinding
 
 		[Static]
 		[Export ("setUserID:")]
-		void SetUserID (string userID);
+		void SetUserId (string userId);
 
 		[Static]
 		[Export ("setAge:")]
