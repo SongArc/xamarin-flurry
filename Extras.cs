@@ -22,7 +22,7 @@ namespace FlurryBinding
 
         private static NSDictionary ParametersToNSDictionary(List<Parameter> parameters)
         {
-            var dict = new NSDictionary();
+            var dict = new NSMutableDictionary();
             foreach (var parameter in parameters)
             {
                 dict[new NSString(parameter.Name)] = new NSString(parameter.Value);
