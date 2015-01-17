@@ -3,13 +3,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{0A0C8D25-C311-4A4C-ADBA-1A6E4E6B2B6A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>FlurryBinding</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>FlurryBinding-5.2.0</AssemblyName>
-    <ReleaseVersion>5.2.0</ReleaseVersion>
+    <AssemblyName>FlurryBinding-6.0.0</AssemblyName>
+    <ReleaseVersion>6.0.0</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -45,13 +45,13 @@
   <ItemGroup>
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libFlurry_5.2.0.a" />
+    <ObjcBindingNativeLibrary Include="libFlurry_6.0.0.a" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="libFlurry_5.2.0.linkwith.cs">
-      <DependentUpon>libFlurry_5.2.0.a</DependentUpon>
+    <Compile Include="libFlurry_6.0.0.linkwith.cs">
+      <DependentUpon>libFlurry_6.0.0.a</DependentUpon>
     </Compile>
     <Compile Include="Extras.cs" />
   </ItemGroup>

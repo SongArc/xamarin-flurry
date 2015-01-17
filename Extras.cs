@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MonoTouch.Foundation;
+using Foundation;
 
 namespace FlurryBinding
 {
