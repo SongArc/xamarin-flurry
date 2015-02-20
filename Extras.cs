@@ -10,6 +10,11 @@ namespace FlurryBinding
             FlurryApi.LogEvent(eventName, ParametersToNSDictionary(parameters));
         }
 
+        public static void LogEvent(string eventName, List<Parameter> parameters, bool timed)
+        {
+            FlurryApi.LogEvent(eventName, ParametersToNSDictionary(parameters), timed);
+        }
+
         public static void LogError(string message, Exception exception)
         {
             FlurryApi.LogError(exception.Message, message, new NSException(exception.Message, "", null));
